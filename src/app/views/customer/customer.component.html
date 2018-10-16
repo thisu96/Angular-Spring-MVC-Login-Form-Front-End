@@ -1,0 +1,29 @@
+<div style="text-align: center">
+  <h4>CUSTOMER REGISTE FORM</h4>
+</div><br>
+<form action="" #frmCustomer="ngForm" (ngSubmit)="saveCustomer()">
+  <div style="margin-left: 25%;">
+    <p>
+      <input type="text" class="text" name="userName" [(ngModel)]="selectedCustomer.userName" placeholder="INPUT YOUR USER NAME">
+    </p>
+    <p>
+      <input type="text" class="text" name="customerName" [(ngModel)]="selectedCustomer.customerName" placeholder="INPUT YOUR NAME">
+    </p>
+    <p>
+      <input type="text" class="text" name="contact" [(ngModel)]="selectedCustomer.contact" placeholder="INPUT YOUR CONTACT">
+    </p>
+    <p>
+      <input type="text" class="text" name="email" [(ngModel)]="selectedCustomer.email" placeholder="INPUT YOUR EMAIL">
+    </p>
+    <p>
+      <input type="text" class="text" name="address" [(ngModel)]="selectedCustomer.address" placeholder="INPUT YOUR ADDRESS">
+    </p>
+    <p>
+      <input type="password" class="text" name="password" [(ngModel)]="selectedCustomer.password" placeholder="INPUT YOUR PASSWORD">
+    </p>
+    <p>
+      <button class="button2">REGISTER</button>&nbsp;&nbsp;&nbsp;
+      <button class="button3">CANCEL</button>&nbsp;&nbsp;&nbsp;
+    </p>
+  </div>
+</form>
